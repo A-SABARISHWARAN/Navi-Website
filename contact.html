@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Navricon Robotics</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">NAVRICON</span>
+                <span class="logo-beta">β</span>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link active cta-nav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="contact-hero fade-in">
+                <h1 class="hero-title">Ready for Autonomous Transformation?</h1>
+                <p class="hero-subtitle">
+                    Connect with our robotics specialists to explore how Navricon can optimize your operations.
+                    Schedule a site demo or request detailed technical specifications.
+                </p>
+            </section>
+
+            <!-- Contact Grid -->
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <section class="contact-form fade-in-up stagger-delay-1">
+                    <h2 class="section-title">Send us a Message</h2>
+                    <p class="section-subtitle">We typically respond within 24 hours</p>
+                    
+                    <form id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required 
+                                   placeholder="Enter your full name"
+                                   aria-required="true">
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required
+                                   placeholder="your.email@company.com"
+                                   aria-required="true">
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company"
+                                   placeholder="Where do you work?">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone"
+                                   placeholder="+1 (555) 123-4567">
+                            <div class="error-message" id="phoneError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inquiryType">I'm interested in *</label>
+                            <select id="inquiryType" name="inquiryType" required aria-required="true">
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="demo">Schedule a Site Demo</option>
+                                <option value="specs">Request Technical Specifications</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="investment">Investment Opportunity</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                            <div class="error-message" id="inquiryTypeError"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="6" required
+                                      placeholder="Tell us about your use case, challenges, or specific requirements..."
+                                      aria-required="true"></textarea>
+                            <div class="error-message" id="messageError"></div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required aria-required="true">
+                            <label for="privacy">
+                                I agree to the <a href="#" class="privacy-link">Privacy Policy</a> and consent to Navricon contacting me regarding this inquiry.
+                            </label>
+                            <div class="error-message" id="privacyError"></div>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <span id="submitText">Send Message</span>
+                                <span id="loadingSpinner" class="loading" style="display: none;"></span>
+                            </button>
+                            <p class="form-note">All fields marked with * are required</p>
+                        </div>
+                        
+                        <div id="successMessage" class="success-message" style="display: none;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10B981">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <div>
+                                <h4>Message Sent Successfully!</h4>
+                                <p>Thank you for contacting Navricon. Our team will review your inquiry and respond within 24 hours.</p>
+                            </div>
+                        </div>
+                        
+                        <div id="errorMessage" class="error-message-global" style="display: none;">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EF4444">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="8" x2="12" y2="12"/>
+                                <line x1="12" y1="16" x2="12" y2="16"/>
+                            </svg>
+                            <div>
+                                <h4>Unable to Send Message</h4>
+                                <p>There was an error submitting your form. Please try again or contact us directly.</p>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- Contact Info -->
+                <aside class="contact-info fade-in-up stagger-delay-2">
+                    <div class="info-card">
+                        <h3>Contact Information</h3>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Location</h4>
+                                <p>Sholinganallur IT Corridor</p>
+                                <p>Chennai, Tamil Nadu 600119</p>
+                                <p class="info-note">Incubated at Sathyabama Institute of Science and Technology</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Phone</h4>
+                                <p>+91 44 2450 3150</p>
+                                <p class="info-note">Monday - Friday, 9:00 AM - 6:00 PM IST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>contact@navricon.com</p>
+                                <p class="info-note">For general inquiries and partnerships</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="16" y1="2" x2="16" y2="6"/>
+                                    <line x1="8" y1="2" x2="8" y2="6"/>
+                                    <line x1="3" y1="10" x2="21" y2="10"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Response Time</h4>
+                                <p>Within 24 Hours</p>
+                                <p class="info-note">For urgent matters, please call our office</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-card">
+                        <h3>Quick Actions</h3>
+                        <a href="#" class="btn btn-secondary btn-block">
+                            <span>Download Technical Specs</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="btn btn-secondary btn-block">
+                            <span>View Case Studies</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                            </svg>
+                        </a>
+                        <a href="projects.html" class="btn btn-primary btn-block">
+                            <span>Explore Our Projects</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="privacy-card">
+                        <h4>Privacy & Compliance</h4>
+                        <p>Navricon is committed to protecting your data. All inquiries are handled with strict confidentiality.</p>
+                        <ul class="privacy-list">
+                            <li>GDPR Compliant Data Handling</li>
+                            <li>Encrypted Form Submissions</li>
+                            <li>No Unnecessary Data Retention</li>
+                            <li>Transparent Privacy Policy</li>
+                        </ul>
+                        <a href="#" class="privacy-link">View Full Privacy Policy →</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- Same footer as index.html -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">NAVRICON</div>
+                    <p class="footer-tagline">Precision Autonomous Systems</p>
+                    <p class="footer-location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Sholinganallur IT Corridor, Chennai
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#" class="resource-link">Technical Specifications</a></li>
+                        <li><a href="#" class="resource-link">Case Studies</a></li>
+                        <li><a href="#" class="resource-link">White Papers</a></li>
+                        <li><a href="#" class="resource-link">API Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p>Ready for autonomous transformation?</p>
+                    <a href="contact.html" class="btn btn-primary btn-small">
+                        Schedule Consultation
+                    </a>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a> • 
+                        <a href="#">GDPR Compliance</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Navricon Robotics. All rights reserved.</p>
+                <p>Incubated at Sathyabama Institute of Science and Technology Startup Cell</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

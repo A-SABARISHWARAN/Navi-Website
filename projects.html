@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Navricon Projects - Explore our autonomous rover systems, technical specifications, and real-world applications.">
+    <title>Projects | Navricon Robotics</title>
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">NAVRICON</span>
+                <span class="logo-beta">β</span>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="contact.html" class="nav-link cta-nav">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="projects-page">
+        <!-- Hero Section -->
+        <section class="projects-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title fade-in">Autonomous Systems in Action</h1>
+                    <p class="hero-subtitle fade-in stagger-delay-1">
+                        Explore our portfolio of precision-engineered autonomous rovers, designed for real-world
+                        industrial and research applications.
+                    </p>
+                    <div class="hero-filter fade-in stagger-delay-2">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="industrial">Industrial</button>
+                        <button class="filter-btn" data-filter="research">Research</button>
+                        <button class="filter-btn" data-filter="development">In Development</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid (Bento-Box Layout) -->
+        <section class="projects-grid-section">
+            <div class="container">
+                <div class="projects-grid" id="projectsContainer">
+                    <!-- Project 1: Atlas Industrial -->
+                    <div class="project-card industrial fade-in" data-category="industrial">
+                        <div class="project-image">
+                            <div class="image-overlay">
+                                <span class="project-badge">Deployed</span>
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">300+</span>
+                                        <span class="stat-label">Hours Runtime</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">99.8%</span>
+                                        <span class="stat-label">Uptime</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-placeholder atlas">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0070F3">
+                                    <rect x="2" y="6" width="20" height="12" rx="2"/>
+                                    <circle cx="7" cy="17" r="2"/>
+                                    <circle cx="17" cy="17" r="2"/>
+                                    <path d="M12 6V3"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h2 class="project-title">Atlas Industrial Rover</h2>
+                                <span class="project-version">v2.1</span>
+                            </div>
+                            <p class="project-description">
+                                Heavy-duty autonomous platform for warehouse logistics and industrial material
+                                handling. Features multi-sensor SLAM and 500kg payload capacity.
+                            </p>
+                            <div class="project-specs">
+                                <div class="spec">
+                                    <span class="spec-label">Payload</span>
+                                    <span class="spec-value">500 kg</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">Runtime</span>
+                                    <span class="spec-value">12 hours</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">Speed</span>
+                                    <span class="spec-value">3 m/s</span>
+                                </div>
+                            </div>
+                            <div class="project-features">
+                                <span class="feature-tag">LiDAR Navigation</span>
+                                <span class="feature-tag">Obstacle Avoidance</span>
+                                <span class="feature-tag">Fleet Management</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-small view-details" data-project="atlas">
+                                    View Details
+                                </button>
+                                <a href="#" class="resource-link">
+                                    <span>Technical Specs</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                        <polyline points="15 3 21 3 21 9"/>
+                                        <line x1="10" y1="14" x2="21" y2="3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Hermes Research -->
+                    <div class="project-card research fade-in stagger-delay-1" data-category="research">
+                        <div class="project-image">
+                            <div class="image-overlay">
+                                <span class="project-badge">Research</span>
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">8x</span>
+                                        <span class="stat-label">Cameras</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">5cm</span>
+                                        <span class="stat-label">Accuracy</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-placeholder hermes">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0070F3">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <circle cx="12" cy="12" r="6"/>
+                                    <circle cx="12" cy="12" r="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h2 class="project-title">Hermes Research Platform</h2>
+                                <span class="project-version">v1.3</span>
+                            </div>
+                            <p class="project-description">
+                                Modular research rover for academic and scientific applications. Supports
+                                interchangeable sensor payloads and open-source software stack.
+                            </p>
+                            <div class="project-specs">
+                                <div class="spec">
+                                    <span class="spec-label">Sensors</span>
+                                    <span class="spec-value">8 slots</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">API Access</span>
+                                    <span class="spec-value">ROS 2</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">Payload</span>
+                                    <span class="spec-value">50 kg</span>
+                                </div>
+                            </div>
+                            <div class="project-features">
+                                <span class="feature-tag">Modular Design</span>
+                                <span class="feature-tag">ROS 2 Compatible</span>
+                                <span class="feature-tag">Research SDK</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-small view-details" data-project="hermes">
+                                    View Details
+                                </button>
+                                <a href="#" class="resource-link">
+                                    <span>Research Paper</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                        <polyline points="14 2 14 8 20 8"/>
+                                        <line x1="16" y1="13" x2="8" y2="13"/>
+                                        <line x1="16" y1="17" x2="8" y2="17"/>
+                                        <polyline points="10 9 9 9 8 9"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Artemis Perimeter -->
+                    <div class="project-card industrial fade-in stagger-delay-2" data-category="industrial">
+                        <div class="project-image">
+                            <div class="image-overlay">
+                                <span class="project-badge">Security</span>
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">24/7</span>
+                                        <span class="stat-label">Operation</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">5km</span>
+                                        <span class="stat-label">Range</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-placeholder artemis">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0070F3">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    <circle cx="12" cy="12" r="3"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h2 class="project-title">Artemis Perimeter Patrol</h2>
+                                <span class="project-version">v1.8</span>
+                            </div>
+                            <p class="project-description">
+                                Autonomous security and surveillance rover with thermal imaging, night vision,
+                                and real-time threat detection for perimeter monitoring.
+                            </p>
+                            <div class="project-specs">
+                                <div class="spec">
+                                    <span class="spec-label">Thermal Cam</span>
+                                    <span class="spec-value">FLIR</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">Night Vision</span>
+                                    <span class="spec-value">4K</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">Autonomy</span>
+                                    <span class="spec-value">Fully</span>
+                                </div>
+                            </div>
+                            <div class="project-features">
+                                <span class="feature-tag">Thermal Imaging</span>
+                                <span class="feature-tag">AI Detection</span>
+                                <span class="feature-tag">Perimeter Mapping</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-small view-details" data-project="artemis">
+                                    View Details
+                                </button>
+                                <a href="#" class="resource-link">
+                                    <span>Case Study</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                        <line x1="3" y1="9" x2="21" y2="9"/>
+                                        <line x1="9" y1="21" x2="9" y2="9"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Apollo Development -->
+                    <div class="project-card development fade-in" data-category="development">
+                        <div class="project-image">
+                            <div class="image-overlay">
+                                <span class="project-badge">R&D</span>
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">2025</span>
+                                        <span class="stat-label">Launch</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">AI</span>
+                                        <span class="stat-label">Powered</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-placeholder apollo">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0070F3">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h2 class="project-title">Apollo AI Navigator</h2>
+                                <span class="project-version">Prototype</span>
+                            </div>
+                            <p class="project-description">
+                                Next-generation rover with reinforcement learning-based navigation, capable of
+                                learning and adapting to new environments without pre-mapping.
+                            </p>
+                            <div class="project-specs">
+                                <div class="spec">
+                                    <span class="spec-label">AI Model</span>
+                                    <span class="spec-value">Reinforcement</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">Learning</span>
+                                    <span class="spec-value">On-board</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">Adaptation</span>
+                                    <span class="spec-value">Real-time</span>
+                                </div>
+                            </div>
+                            <div class="project-features">
+                                <span class="feature-tag">Reinforcement Learning</span>
+                                <span class="feature-tag">Edge AI</span>
+                                <span class="feature-tag">Adaptive Navigation</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-small view-details" data-project="apollo">
+                                    View Details
+                                </button>
+                                <a href="#" class="resource-link">
+                                    <span>Whitepaper</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                        <polyline points="14 2 14 8 20 8"/>
+                                        <line x1="16" y1="13" x2="8" y2="13"/>
+                                        <line x1="16" y1="17" x2="8" y2="17"/>
+                                        <polyline points="10 9 9 9 8 9"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Surveyor Mapping -->
+                    <div class="project-card research fade-in stagger-delay-1" data-category="research">
+                        <div class="project-image">
+                            <div class="image-overlay">
+                                <span class="project-badge">Mapping</span>
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">1cm</span>
+                                        <span class="stat-label">Resolution</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">RTK</span>
+                                        <span class="stat-label">GPS</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-placeholder surveyor">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0070F3">
+                                    <polygon points="3 6 9.02 9.02 12 3 14.98 9.02 21 6 16.8 12 21 18 14.98 14.98 12 21 9.02 14.98 3 18 7.2 12 3 6"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h2 class="project-title">Surveyor 3D Mapper</h2>
+                                <span class="project-version">v2.4</span>
+                            </div>
+                            <p class="project-description">
+                                High-precision topographic mapping rover with LiDAR scanning, photogrammetry,
+                                and RTK GPS for centimeter-accurate 3D terrain modeling.
+                            </p>
+                            <div class="project-specs">
+                                <div class="spec">
+                                    <span class="spec-label">LiDAR</span>
+                                    <span class="spec-value">32-beam</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">Accuracy</span>
+                                    <span class="spec-value">±1cm</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">Range</span>
+                                    <span class="spec-value">100m</span>
+                                </div>
+                            </div>
+                            <div class="project-features">
+                                <span class="feature-tag">3D LiDAR</span>
+                                <span class="feature-tag">RTK GPS</span>
+                                <span class="feature-tag">Photogrammetry</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-small view-details" data-project="surveyor">
+                                    View Details
+                                </button>
+                                <a href="#" class="resource-link">
+                                    <span>Sample Data</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                        <polyline points="7 10 12 15 17 10"/>
+                                        <line x1="12" y1="15" x2="12" y2="3"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: HAZMAT Inspector -->
+                    <div class="project-card industrial fade-in stagger-delay-2" data-category="industrial">
+                        <div class="project-image">
+                            <div class="image-overlay">
+                                <span class="project-badge">Hazardous</span>
+                                <div class="project-stats">
+                                    <div class="stat">
+                                        <span class="stat-value">IP67</span>
+                                        <span class="stat-label">Rating</span>
+                                    </div>
+                                    <div class="stat">
+                                        <span class="stat-value">-20°C</span>
+                                        <span class="stat-label">to 60°C</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-placeholder hazmat">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0070F3">
+                                    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                                    <line x1="12" y1="9" x2="12" y2="13"/>
+                                    <line x1="12" y1="17" x2="12" y2="17"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h2 class="project-title">HAZMAT Inspector</h2>
+                                <span class="project-version">v1.5</span>
+                            </div>
+                            <p class="project-description">
+                                Ruggedized rover for hazardous environment inspection with gas sensors,
+                                radiation detectors, and explosive atmosphere certification.
+                            </p>
+                            <div class="project-specs">
+                                <div class="spec">
+                                    <span class="spec-label">Rating</span>
+                                    <span class="spec-value">ATEX Zone 1</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">Sensors</span>
+                                    <span class="spec-value">Multi-gas</span>
+                                </div>
+                                <div class="spec">
+                                    <span class="spec-label">Protection</span>
+                                    <span class="spec-value">IP67</span>
+                                </div>
+                            </div>
+                            <div class="project-features">
+                                <span class="feature-tag">ATEX Certified</span>
+                                <span class="feature-tag">Gas Detection</span>
+                                <span class="feature-tag">Radiation Safe</span>
+                            </div>
+                            <div class="project-actions">
+                                <button class="btn btn-primary btn-small view-details" data-project="hazmat">
+                                    View Details
+                                </button>
+                                <a href="#" class="resource-link">
+                                    <span>Safety Report</span>
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Details Modal -->
+        <div class="project-modal" id="projectModal">
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+                <div class="modal-body" id="modalBody">
+                    <!-- Content loaded dynamically -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Human-AI Interface Section -->
+        <section class="interface-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title fade-in">Human-AI Collaborative Interface</h2>
+                    <p class="section-subtitle fade-in stagger-delay-1">
+                        Intuitive control systems designed for partnership, not replacement
+                    </p>
+                </div>
+                
+                <div class="interface-grid">
+                    <div class="interface-demo fade-in">
+                        <div class="demo-container">
+                            <div class="demo-screen">
+                                <div class="screen-header">
+                                    <div class="screen-title">Navricon Control Center</div>
+                                    <div class="screen-status">
+                                        <span class="status-dot online"></span>
+                                        <span>Connected</span>
+                                    </div>
+                                </div>
+                                <div class="screen-content">
+                                    <div class="map-view">
+                                        <div class="map-grid">
+                                            <!-- Grid lines -->
+                                            <div class="grid-line horizontal"></div>
+                                            <div class="grid-line vertical"></div>
+                                            <!-- Rover on map -->
+                                            <div class="rover-marker">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0070F3">
+                                                    <circle cx="12" cy="12" r="8"/>
+                                                    <line x1="12" y1="4" x2="12" y2="8"/>
+                                                    <line x1="12" y1="16" x2="12" y2="20"/>
+                                                    <line x1="4" y1="12" x2="8" y2="12"/>
+                                                    <line x1="16" y1="12" x2="20" y2="12"/>
+                                                </svg>
+                                            </div>
+                                            <!-- Obstacles -->
+                                            <div class="obstacle" style="top: 30%; left: 40%;"></div>
+                                            <div class="obstacle" style="top: 60%; left: 70%;"></div>
+                                            <!-- Waypoints -->
+                                            <div class="waypoint" style="top: 20%; left: 20%;"></div>
+                                            <div class="waypoint" style="top: 80%; left: 80%;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="control-panel">
+                                        <div class="control-group">
+                                            <button class="control-btn">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                    <circle cx="12" cy="12" r="10"/>
+                                                    <polygon points="10 8 16 12 10 16 10 8"/>
+                                                </svg>
+                                                <span>Start Mission</span>
+                                            </button>
+                                            <button class="control-btn">
+                                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                                    <circle cx="12" cy="12" r="10"/>
+                                                    <rect x="9" y="9" width="6" height="6"/>
+                                                </svg>
+                                                <span>Pause</span>
+                                            </button>
+                                        </div>
+                                        <div class="control-slider">
+                                            <label>Autonomy Level</label>
+                                            <input type="range" min="0" max="100" value="85" class="slider">
+                                            <div class="slider-labels">
+                                                <span>Manual</span>
+                                                <span>Assisted</span>
+                                                <span>Full Auto</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="screen-footer">
+                                    <div class="telemetry">
+                                        <div class="telemetry-item">
+                                            <span class="telemetry-label">Battery</span>
+                                            <span class="telemetry-value">87%</span>
+                                        </div>
+                                        <div class="telemetry-item">
+                                            <span class="telemetry-label">Speed</span>
+                                            <span class="telemetry-value">2.4 m/s</span>
+                                        </div>
+                                        <div class="telemetry-item">
+                                            <span class="telemetry-label">Obstacles</span>
+                                            <span class="telemetry-value">2 detected</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="interface-features fade-in stagger-delay-1">
+                        <h3>Designed for Intuitive Operation</h3>
+                        <p>
+                            Our control interface follows the "swipes, not taps" philosophy—minimizing
+                            cognitive load while maximizing situational awareness.
+                        </p>
+                        
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0070F3">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                                    </svg>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Gesture Control</h4>
+                                    <p>Intuitive swipe gestures for navigation and mission planning</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0070F3">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12 6 12 12 16 14"/>
+                                    </svg>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Real-time Feedback</h4>
+                                    <p>Immediate visual and haptic feedback for all actions</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0070F3">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="9" cy="7" r="4"/>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    </svg>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Collaborative Mode</h4>
+                                    <p>Multiple operators can collaborate on complex missions</p>
+                                </div>
+                            </div>
+                            
+                            <div class="feature-item">
+                                <div class="feature-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0070F3">
+                                        <path d="M12 20h9"/>
+                                        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                                    </svg>
+                                </div>
+                                <div class="feature-content">
+                                    <h4>Mission Annotations</h4>
+                                    <p>Draw directly on the map interface for precise instructions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="resources-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title fade-in">Technical Resources</h2>
+                    <p class="section-subtitle fade-in stagger-delay-1">
+                        Download specifications, research papers, and integration guides
+                    </p>
+                </div>
+                
+                <div class="resources-grid">
+                    <div class="resource-card fade-in">
+                        <div class="resource-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0070F3">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 9 8 9"/>
+                            </svg>
+                        </div>
+                        <h3>Technical Specifications</h3>
+                        <p>Detailed specifications, performance metrics, and compatibility guides for all rover models.</p>
+                        <a href="#" class="btn btn-secondary btn-small">
+                            <span>Download PDF</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                                <polyline points="7 10 12 15 17 10"/>
+                                <line x1="12" y1="15" x2="12" y2="3"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="resource-card fade-in stagger-delay-1">
+                        <div class="resource-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0070F3">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="3" y1="9" x2="21" y2="9"/>
+                                <line x1="9" y1="21" x2="9" y2="9"/>
+                            </svg>
+                        </div>
+                        <h3>Case Studies</h3>
+                        <p>Real-world deployment examples showing efficiency gains and ROI calculations.</p>
+                        <a href="#" class="btn btn-secondary btn-small">
+                            <span>View Studies</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="resource-card fade-in stagger-delay-2">
+                        <div class="resource-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0070F3">
+                                <path d="M12 20h9"/>
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+                            </svg>
+                        </div>
+                        <h3>API Documentation</h3>
+                        <p>Complete REST API documentation for system integration and custom development.</p>
+                        <a href="#" class="btn btn-secondary btn-small">
+                            <span>Explore API</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="projects-cta">
+            <div class="container">
+                <div class="cta-content fade-in">
+                    <h2>Ready to Deploy Autonomous Solutions?</h2>
+                    <p>
+                        Contact our solutions team for a customized demonstration or technical consultation
+                        tailored to your specific requirements.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">
+                            <span>Request Custom Demo</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            <span>Technical Consultation</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">NAVRICON</div>
+                    <p class="footer-tagline">Precision Autonomous Systems</p>
+                    <p class="footer-location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Sholinganallur IT Corridor, Chennai
+                    </p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#" class="resource-link">Technical Specifications</a></li>
+                        <li><a href="#" class="resource-link">Case Studies</a></li>
+                        <li><a href="#" class="resource-link">White Papers</a></li>
+                        <li><a href="#" class="resource-link">API Documentation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <p>Ready for autonomous transformation?</p>
+                    <a href="contact.html" class="btn btn-primary btn-small">
+                        Schedule Consultation
+                    </a>
+                    <div class="footer-legal">
+                        <a href="#">Privacy Policy</a> • 
+                        <a href="#">GDPR Compliance</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Navricon Robotics. All rights reserved.</p>
+                <p>Incubated at Sathyabama Institute of Science and Technology Startup Cell</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+    <style>
+        /* Projects Page Specific Styles */
+        .projects-page {
+            padding-top: 80px;
+        }
+        
+        .projects-hero {
+            background: linear-gradient(135deg, rgba(15, 17, 18, 0.9) 0%, rgba(15, 17, 18, 0.7) 100%);
+            padding: var(--space-xl) 0;
+            text-align: center;
+        }
+        
+        .hero-filter {
+            display: flex;
+            gap: var(--space-sm);
+            justify-content: center;
+            margin-top: var(--space-lg);
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: var(--space-xs) var(--space-md);
+            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: rgba(255, 255, 255, 0.7);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: var(--transition-base);
+            font-family: var(--font-body);
+            font-size: 0.875rem;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--accent);
+            color: var(--primary-light);
+            border-color: var(--accent);
+        }
+        
+        /* Projects Grid */
+        .projects-grid-section {
+            padding: var(--space-xl) 0;
+            background-color: var(--primary-dark);
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-lg);
+        }
+        
+        .project-card {
+            background-color: var(--secondary-dark);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition-base);
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .project-card.hidden {
+            display: none;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent);
+            box-shadow: 0 20px 40px rgba(0, 112, 243, 0.1);
+        }
+        
+        .project-image {
+            position: relative;
+            height: 200px;
+            background-color: rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.3;
+        }
+        
+        .image-placeholder.atlas {
+            background: linear-gradient(135deg, rgba(0, 112, 243, 0.1) 0%, rgba(0, 112, 243, 0.05) 100%);
+        }
+        
+        .image-placeholder.hermes {
+            background: linear-gradient(135deg, rgba(0, 112, 243, 0.1) 0%, rgba(0, 112, 243, 0.05) 100%);
+        }
+        
+        .image-placeholder.artemis {
+            background: linear-gradient(135deg, rgba(0, 112, 243, 0.1) 0%, rgba(0, 112, 243, 0.05) 100%);
+        }
+        
+        .image-placeholder.apollo {
+            background: linear-gradient(135deg, rgba(0, 112, 243, 0.1) 0%, rgba(0, 112, 243, 0.05) 100%);
+        }
+        
+        .image-placeholder.surveyor {
+            background: linear-gradient(135deg, rgba(0, 112, 243, 0.1) 0%, rgba(0, 112, 243, 0.05) 100%);
+        }
+        
+        .image-placeholder.hazmat {
+            background: linear-gradient(135deg, rgba(0, 112, 243, 0.1) 0%, rgba(0, 112, 243, 0.05) 100%);
+        }
+        
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: var(--space-sm);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+        }
+        
+        .project-badge {
+            background-color: var(--accent);
+            color: var(--primary-light);
+            padding: 4px 12px;
+            border-radius: var(--radius-sm);
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .project-stats {
+            display: flex;
+            gap: var(--space-sm);
+        }
+        
+        .stat {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        
+        .stat-value {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.875rem;
+        }
+        
+        .stat-label {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .project-content {
+            padding: var(--space-lg);
+        }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+        
+        .project-version {
+            font-size: 0.875rem;
+            color: var(--accent);
+            background-color: rgba(0, 112, 243, 0.1);
+            padding: 2px 8px;
+            border-radius: var(--radius-sm);
+        }
+        
+        .project-description {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: var(--space-md);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .project-specs {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-sm);
+            margin-bottom: var(--space-md);
+            padding: var(--space-sm) 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .spec {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .spec-label {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 2px;
+        }
+        
+        .spec-value {
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        
+        .project-features {
+            display: flex;
+            gap: var(--space-xs);
+            margin-bottom: var(--space-md);
+            flex-wrap: wrap;
+        }
+        
+        .feature-tag {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 4px 8px;
+            border-radius: var(--radius-sm);
+            font-size: 0.75rem;
+        }
+        
+        .project-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        /* Project Modal */
+        .project-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(15, 17, 18, 0.95);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            padding: var(--space-md);
+        }
+        
+        .project-modal.active {
+            display: flex;
+        }
+        
+        .modal-content {
+            background-color: var(--secondary-dark);
+            border-radius: var(--radius-lg);
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: var(--space-md);
+            right: var(--space-md);
+            background: none;
+            border: none;
+            color: var(--primary-light);
+            cursor: pointer;
+            z-index: 10;
+            padding: var(--space-xs);
+            border-radius: var(--radius-sm);
+            transition: var(--transition-base);
+        }
+        
+        .modal-close:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .modal-body {
+            padding: var(--space-xl);
+        }
+        
+        /* Interface Section */
+        .interface-section {
+            padding: var(--space-xl) 0;
+            background-color: var(--secondary-dark);
+        }
+        
+        .interface-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-xl);
+            margin-top: var(--space-lg);
+        }
+        
+        @media (min-width: 992px) {
+            .interface-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        .demo-container {
+            background-color: var(--primary-dark);
+            border-radius: var(--radius-lg);
+            padding: var(--space-md);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .demo-screen {
+            background-color: var(--secondary-dark);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+        
+        .screen-header {
+            padding: var(--space-sm);
+            background-color: rgba(0, 112, 243, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .screen-title {
+            font-weight: 600;
+        }
+        
+        .screen-status {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        
+        .status-dot.online {
+            background-color: #10B981;
+            animation: pulse 2s infinite;
+        }
+        
+        .screen-content {
+            padding: var(--space-md);
+        }
+        
+        .map-view {
+            height: 300px;
+            background-color: var(--primary-dark);
+            border-radius: var(--radius-md);
+            position: relative;
+            overflow: hidden;
+            margin-bottom: var(--space-md);
+        }
+        
+        .map-grid {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .grid-line {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .grid-line.horizontal {
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+        }
+        
+        .grid-line.vertical {
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+        }
+        
+        .rover-marker {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rover-pulse 2s infinite;
+        }
+        
+        .obstacle {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(239, 68, 68, 0.3);
+            border-radius: var(--radius-sm);
+            border: 2px solid #EF4444;
+        }
+        
+        .waypoint {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: rgba(16, 185, 129, 0.3);
+            border-radius: 50%;
+            border: 2px solid #10B981;
+        }
+        
+        .control-panel {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+        }
+        
+        .control-group {
+            display: flex;
+            gap: var(--space-sm);
+        }
+        
+        .control-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-xs);
+            padding: var(--space-sm);
+            background-color: var(--primary-dark);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--primary-light);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: var(--transition-base);
+        }
+        
+        .control-btn:hover {
+            background-color: var(--accent);
+            border-color: var(--accent);
+        }
+        
+        .control-slider {
+            padding: var(--space-sm);
+            background-color: var(--primary-dark);
+            border-radius: var(--radius-md);
+        }
+        
+        .control-slider label {
+            display: block;
+            margin-bottom: var(--space-xs);
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .slider {
+            width: 100%;
+            height: 6px;
+            -webkit-appearance: none;
+            appearance: none;
+            background: linear-gradient(to right, #EF4444, #F59E0B, #10B981);
+            border-radius: 3px;
+            outline: none;
+        }
+        
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background-color: var(--accent);
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid var(--primary-light);
+        }
+        
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: var(--space-xs);
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        .screen-footer {
+            padding: var(--space-sm);
+            background-color: rgba(0, 0, 0, 0.2);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .telemetry {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .telemetry-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .telemetry-label {
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 2px;
+        }
+        
+        .telemetry-value {
+            font-weight: 600;
+            font-size: 0.875rem;
+        }
+        
+        .interface-features h3 {
+            margin-bottom: var(--space-md);
+        }
+        
+        .feature-list {
+            margin-top: var(--space-lg);
+        }
+        
+        .feature-item {
+            display: flex;
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+        
+        .feature-icon {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(0, 112, 243, 0.1);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .feature-content h4 {
+            margin-bottom: var(--space-xs);
+            font-size: 1rem;
+        }
+        
+        .feature-content p {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        /* Resources Section */
+        .resources-section {
+            padding: var(--space-xl) 0;
+            background-color: var(--primary-dark);
+        }
+        
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-lg);
+        }
+        
+        .resource-card {
+            background-color: var(--secondary-dark);
+            padding: var(--space-lg);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+        }
+        
+        .resource-icon {
+            margin-bottom: var(--space-md);
+        }
+        
+        .resource-card h3 {
+            margin-bottom: var(--space-sm);
+        }
+        
+        .resource-card p {
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: var(--space-lg);
+        }
+        
+        /* CTA Section */
+        .projects-cta {
+            padding: var(--space-xl) 0;
+            background: linear-gradient(135deg, rgba(0, 112, 243, 0.1) 0%, rgba(0, 112, 243, 0.05) 100%);
+            text-align: center;
+        }
+        
+        .cta-content h2 {
+            margin-bottom: var(--space-md);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: var(--space-md);
+            justify-content: center;
+            margin-top: var(--space-lg);
+            flex-wrap: wrap;
+        }
+        
+        /* Animations */
+        @keyframes rover-pulse {
+            0%, 100% {
+                transform: translate(-50%, -50%) scale(1);
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .project-specs {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .project-actions {
+                flex-direction: column;
+                gap: var(--space-sm);
+                align-items: stretch;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .modal-body {
+                padding: var(--space-lg) var(--space-md);
+            }
+        }
+    </style>
+</body>
+</html>
